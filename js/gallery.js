@@ -64,7 +64,7 @@ const images = [
   },
 ];
 
-const modal = document.querySelector('.modal');
+const body = document.querySelector('body');
 const ulElem = document.querySelector('.gallery');
 
 function imageTemplate(image) {
@@ -89,16 +89,16 @@ ulElem.innerHTML = imagesTemplate(images);
 ulElem.addEventListener('click', e => {
   e.preventDefault();
   if (e.target.nodeName !== 'IMG') return;
+  console.log(e.target.dataset.source);
 
   const instance = basicLightbox.create(`
-    <div class="modal>
+    <div class="modal data-type="modal">
     <img
     class="gallery-image"
     src="${e.target.dataset.source}"    
   />
     </div>
 `);
-  if (e.target.nodeName === 'DIV') console.log('1111');
+
   instance.show();
-  console.log(modal);
 });
