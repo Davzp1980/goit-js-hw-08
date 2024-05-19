@@ -30,29 +30,3 @@ img {
   height: 200px;
   overflow: hidden;
 }
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 1440px;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.8);
-}
-
-.modal img {
-  margin: 0 auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
