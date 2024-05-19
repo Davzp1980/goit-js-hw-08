@@ -89,7 +89,6 @@ ulElem.innerHTML = imagesTemplate(images);
 ulElem.addEventListener('click', e => {
   e.preventDefault();
   if (e.target.nodeName !== 'IMG') return;
-  console.log(e.target.dataset.source);
 
   const instance = basicLightbox.create(`
     <div class="modal data-type="modal">
